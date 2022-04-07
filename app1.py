@@ -45,7 +45,7 @@ def main():
 	with prediction:
 		st.subheader("Would such a person survive the catastrophe?")
 		st.subheader(("Yes" if survival[0] == 1 else "No"))
-		st.write("Prediction certainty {0:.2f} %".format(s_confidence[0][survival][0] * 100))
+		st.write("Prediction certainty: {0:.2f} %".format(s_confidence[0][survival][0] * 100))
 
 if __name__ == "__main__":
     main()
